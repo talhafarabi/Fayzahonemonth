@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anniversary Mail 💌</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(135deg, #ffd6e0, #fff0f5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .mail-box {
+        background: white;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        text-align: center;
+        max-width: 420px;
+    }
+
+    button {
+        padding: 10px 20px;
+        margin: 10px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .yes { background-color: #ff8fab; color: white; }
+    .no { background-color: #ccc; }
+
+    .puppy {
+        display: none;
+        margin-top: 20px;
+        font-size: 40px;
+    }
+
+    .mail-icon {
+        display: none;
+        font-size: 60px;
+        cursor: pointer;
+        margin-top: 20px;
+        transition: transform 0.2s;
+    }
+
+    .mail-icon:hover {
+        transform: scale(1.1);
+    }
+
+    .letter {
+        display: none;
+        margin-top: 20px;
+        background: #fff0f5;
+        border: 2px solid #ffb3c6;
+        border-radius: 15px;
+        padding: 20px;
+        text-align: left;
+        white-space: pre-wrap;
+    }
+</style>
+</head>
+<body>
+
+<div class="mail-box">
+    <h2>💌 You've got a message 💌</h2>
+    <p>Open this love letter?</p>
+
+    <button class="yes" onclick="showMail()">Yes 💖</button>
+    <button class="no" onclick="showPuppy()">No 😢</button>
+
+    <div class="puppy" id="puppy">
+        (╥﹏╥) 🐶💔
+    </div>
+
+    <div class="mail-icon" id="mailIcon" onclick="openLetter()">
+        💌
+        <p style="font-size:14px;">Tap to open</p>
+    </div>
+
+    <div class="letter" id="letter">
+OMG HAPPY ANNIVARSARY BAE IWJCFIAWEHC.
+
+tyy for the gift T.T i lwky never expected to get tht typa gift frr. Bitch i cant belip tht its alrdy bee 1 month like i thought onlne rltnships dont even last for a week but guess we r special (i hope so). I lubhhh u smmmm. I lwky cant imagine ma life without u atp. I feel like i will lose u if im away for u or more than 1 hour. Idk but yea i will see u as ma first bf tbh bc bf means lubhing him and i do lubh u. Plus i wanna see u as ma irl husband too and ma kids dad. I am alays scared to lose u das why i always overthink (idc if u hate it iwill overthink again) but yea..pls dont ever lib me. and if u feel like losing interest, js tell me. But without this, dont eve lib me or i wont marry anyone else. BUT ANYWAYS I LUBH U SMMM MWAH
+
+AGAIN HAPPY ANIVARSARY BAEE ❤️
+    </div>
+</div>
+
+<script>
+function showMail() {
+    document.getElementById('mailIcon').style.display = 'block';
+    document.getElementById('puppy').style.display = 'none';
+}
+
+function openLetter() {
+    document.getElementById('letter').style.display = 'block';
+    document.getElementById('mailIcon').style.display = 'none';
+}
+
+function showPuppy() {
+    document.getElementById('puppy').style.display = 'block';
+    document.getElementById('mailIcon').style.display = 'none';
+    document.getElementById('letter').style.display = 'none';
+}
+</script>
+
+</body>
+</html>
+
+  
